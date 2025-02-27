@@ -1,0 +1,50 @@
+# Assign1
+# Assign1
+1.Difference Between Lists and Tuples
+Mutability & Performance:
+
+Lists: Mutable (can be modified after creation), slower performance due to dynamic allocation.
+Tuples: Immutable (cannot be modified after creation), faster as they use less memory.
+Use lists when you need a dynamic collection that can change.
+Use tuples when you need a fixed, unchangeable sequence for efficiency.
+
+2. Type Conversion in Python:
+Python supports implicit and explicit type conversion:
+Implicit Conversion (Automatic by Python):
+x = 10   # Integer
+y = 2.5  # Float
+z = x + y  # Python automatically converts x to float
+print(z, type(z))  # Output: 12.5 <class 'float'>
+
+Explicit Conversion (Using functions like int(), float(), str(), list()):
+num_str = "100"
+num_int = int(num_str)  # Converts string to integer
+print(num_int, type(num_int))  # Output: 100 <class 'int'>
+
+3. Using += Operator
+num = 5
+num += 10  # Increases num by 10
+print(num)  # Output: 15
+
+4. Leap Year Check
+year = int(input("Enter a year: "))
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(f"{year} is a leap year.")
+else:
+    print(f"{year} is not a leap year.")
+   
+5. Grading System
+marks = int(input("Enter your marks: "))
+
+if 90 <= marks <= 100:
+    grade = "A"
+elif 80 <= marks < 90:
+    grade = "B"
+elif 70 <= marks < 80:
+    grade = "C"
+elif 60 <= marks < 70:
+    grade = "D"
+else:
+    grade = "F"
+
+print(f"Your grade is: {grade}")
